@@ -28,8 +28,8 @@ function Index() {
             <div className="mt-16 flex flex-col gap-7 sm:flex-row sm:items-center">
               <img
                 className="h-[138px] w-[138px] object-contain"
-                src={qrCode}
-                alt="QR code to download Okubi app"
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pzau.github.io/ride-share-easy/"
+                alt="QR code to current site"
               />
               <div className="max-w-[260px]">
                 <h2 className="yango-headline text-[36px] font-black uppercase leading-none">
