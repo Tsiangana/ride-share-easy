@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as DriverRouteImport } from './routes/driver'
+import { Route as CareerRouteImport } from './routes/career'
 import { Route as IndexRouteImport } from './routes/index'
 
 const DriverRoute = DriverRouteImport.update({
   id: '/driver',
   path: '/driver',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareerRoute = CareerRouteImport.update({
+  id: '/career',
+  path: '/career',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/career': typeof CareerRoute
   '/driver': typeof DriverRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/career': typeof CareerRoute
   '/driver': typeof DriverRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/career': typeof CareerRoute
   '/driver': typeof DriverRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/driver'
+  fullPaths: '/' | '/career' | '/driver'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/driver'
-  id: '__root__' | '/' | '/driver'
+  to: '/' | '/career' | '/driver'
+  id: '__root__' | '/' | '/career' | '/driver'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CareerRoute: typeof CareerRoute
   DriverRoute: typeof DriverRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/driver'
       fullPath: '/driver'
       preLoaderRoute: typeof DriverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/career': {
+      id: '/career'
+      path: '/career'
+      fullPath: '/career'
+      preLoaderRoute: typeof CareerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CareerRoute: CareerRoute,
   DriverRoute: DriverRoute,
 }
 export const routeTree = rootRouteImport
