@@ -1,4 +1,4 @@
-# Okubi - Modern Ride-Sharing Platform
+# Okubi - Modern Platform
 
 Okubi is a high-fidelity landing page for a modern ride-sharing application. Built with speed and professionalism in mind, it provides a seamless user experience for riders and drivers alike.
 
