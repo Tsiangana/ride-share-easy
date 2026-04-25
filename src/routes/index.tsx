@@ -43,8 +43,9 @@ function Index() {
 
             <a
               className="mt-8 inline-flex rounded-md bg-brand px-6 py-3 text-base font-bold text-brand-foreground transition-transform hover:-translate-y-0.5 sm:hidden"
-              href="/src/assets/Okubi.apk"
-              download
+              href="https://firebasestorage.googleapis.com/v0/b/portifolio-527fa.firebasestorage.app/o/apps%2FOkubi.apk?alt=media&token=068b255f-e8f2-4b48-a3a4-5685a40d218f"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Download App
             </a>

@@ -17,8 +17,9 @@ export function Header() {
         </nav>
       </div>
       <a
-        href="/src/assets/Okubi.apk"
-        download
+        href="https://firebasestorage.googleapis.com/v0/b/portifolio-527fa.firebasestorage.app/o/apps%2FOkubi.apk?alt=media&token=068b255f-e8f2-4b48-a3a4-5685a40d218f"
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 text-base font-semibold transition-opacity hover:opacity-75"
       >
         <span className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-foreground">
