@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import heroImage from "../assets/yango/hero.jpg";
 import qrCode from "../assets/yango/qr-code.png";
 import discountIcon from "../assets/yango/discount.png";
@@ -13,14 +13,16 @@ function Index() {
     <main className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-20 flex h-16 items-center justify-between bg-brand px-8 text-brand-foreground md:px-10">
         <div className="flex items-center gap-8">
-          <div className="yango-logo text-[34px] font-black leading-none">YANGO</div>
+          <Link to="/" className="yango-logo text-[34px] font-black leading-none">
+            OKUBI
+          </Link>
           <nav className="hidden items-center gap-6 text-base font-semibold md:flex">
-            <a className="transition-opacity hover:opacity-75" href="/">
+            <Link className="transition-opacity hover:opacity-75" to="/driver">
               Driver
-            </a>
-            <a className="transition-opacity hover:opacity-75" href="/">
+            </Link>
+            <Link className="transition-opacity hover:opacity-75" to="/career">
               Career
-            </a>
+            </Link>
           </nav>
         </div>
         <button className="flex items-center gap-2 text-base font-semibold transition-opacity hover:opacity-75" type="button">
@@ -44,13 +46,13 @@ function Index() {
               Download the app
             </h1>
             <p className="mt-7 max-w-[580px] text-[16px] leading-[1.32] text-ink-soft sm:text-[18px]">
-              Yango gets you where you need to go for less. Request your ride in the app without making calls. It’s fast, easy, and works with iOS and Android.
+              Okubi gets you where you need to go for less. Request your ride in the app without making calls. It’s fast, easy, and works with iOS and Android.
             </p>
 
             <div className="mt-16 flex flex-col gap-7 sm:flex-row sm:items-center">
-              <img className="h-[138px] w-[138px] object-contain" src={qrCode} alt="QR code to download Yango app" />
+              <img className="h-[138px] w-[138px] object-contain" src={qrCode} alt="QR code to download Okubi app" />
               <div className="max-w-[260px]">
-                <h2 className="yango-headline text-[36px] font-black uppercase leading-none">Join Yango</h2>
+                <h2 className="yango-headline text-[36px] font-black uppercase leading-none">Join Okubi</h2>
                 <p className="mt-5 text-[18px] leading-[1.25] text-ink-soft">
                   Open the camera on your smartphone and scan the code
                 </p>
@@ -63,7 +65,7 @@ function Index() {
           </div>
         </div>
         <div className="min-h-[430px] overflow-hidden lg:min-h-[601px]">
-          <img className="h-full w-full object-cover object-center" src={heroImage} alt="Yango rider standing beside a taxi" />
+          <img className="h-full w-full object-cover object-center" src={heroImage} alt="Okubi rider standing beside a taxi" />
         </div>
       </section>
 
@@ -71,7 +73,7 @@ function Index() {
         <div className="hidden bg-page-panel lg:block" />
         <div className="px-8 py-14 md:px-16 lg:px-32">
           <h2 className="yango-headline text-[42px] font-black uppercase sm:text-[54px]">
-            Here's what Yango offers
+            Here's what Okubi offers
           </h2>
           <div className="mt-16 grid gap-12 xl:grid-cols-2">
             <article className="flex items-center gap-8">
