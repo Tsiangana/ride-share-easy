@@ -1,12 +1,19 @@
-import { Link, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "../components/Header";
 
 export const Route = createFileRoute("/career")({
   head: () => ({
     meta: [
       { title: "Career — Okubi" },
-      { name: "description", content: "Build a career at Okubi and help create a sharper urban mobility experience." },
+      {
+        name: "description",
+        content: "Build a career at Okubi and help create a sharper urban mobility experience.",
+      },
       { property: "og:title", content: "Career — Okubi" },
-      { property: "og:description", content: "Build a career at Okubi and help create a sharper urban mobility experience." },
+      {
+        property: "og:description",
+        content: "Build a career at Okubi and help create a sharper urban mobility experience.",
+      },
     ],
   }),
   component: CareerPage,
@@ -15,16 +22,7 @@ export const Route = createFileRoute("/career")({
 function CareerPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <header className="fixed inset-x-0 top-0 z-20 flex h-16 items-center justify-between bg-brand px-8 text-brand-foreground md:px-10">
-        <div className="flex items-center gap-8">
-          <Link to="/" className="yango-logo text-[34px] font-black leading-none">OKUBI</Link>
-          <nav className="hidden items-center gap-6 text-base font-semibold md:flex">
-            <Link to="/driver" className="transition-opacity hover:opacity-75">Driver</Link>
-            <Link to="/career" className="transition-opacity hover:opacity-75">Career</Link>
-          </nav>
-        </div>
-        <span className="text-base font-semibold">English</span>
-      </header>
+      <Header />
 
       <section className="min-h-screen px-8 pt-32 md:px-10 lg:px-20">
         <div className="yango-fade-in mx-auto max-w-[1160px]">
@@ -34,11 +32,20 @@ function CareerPage() {
           </h1>
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {[
-              ["Operations", "Keep city launches, driver support, and rider quality running smoothly."],
+              [
+                "Operations",
+                "Keep city launches, driver support, and rider quality running smoothly.",
+              ],
               ["Product", "Shape simple digital experiences for riders, drivers, and local teams."],
-              ["Growth", "Create practical campaigns that make Okubi the easy choice in every city."],
+              [
+                "Growth",
+                "Create practical campaigns that make Okubi the easy choice in every city.",
+              ],
             ].map(([title, copy]) => (
-              <article className="min-h-[240px] border-t-4 border-brand bg-page-panel p-7" key={title}>
+              <article
+                className="min-h-[240px] border-t-4 border-brand bg-page-panel p-7"
+                key={title}
+              >
                 <h2 className="text-3xl font-black">{title}</h2>
                 <p className="mt-6 text-lg leading-[1.35] text-ink-soft">{copy}</p>
               </article>

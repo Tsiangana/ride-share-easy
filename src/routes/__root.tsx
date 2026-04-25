@@ -31,12 +31,12 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Okubi Rider App" },
       { name: "description", content: "Download the Okubi app and request affordable rides quickly on iOS and Android." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "Tsiangana" },
       { property: "og:title", content: "Okubi Rider App" },
       { property: "og:description", content: "Download the Okubi app and request affordable rides quickly on iOS and Android." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@Tsiangana" },
     ],
     links: [
       {
