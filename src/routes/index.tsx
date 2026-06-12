@@ -18,11 +18,10 @@ function Index() {
         <div className="yango-fade-in flex items-center px-8 py-14 md:px-10 lg:pb-8 lg:pt-24">
           <div className="w-full max-w-[610px]">
             <h1 className="yango-headline max-w-[520px] text-[52px] font-black uppercase sm:text-[64px] lg:text-[66px]">
-              Download the app
+              Baixar o app
             </h1>
             <p className="mt-7 max-w-[580px] text-[16px] leading-[1.32] text-ink-soft sm:text-[18px]">
-              Okubi gets you where you need to go for less. Request your ride in the app without
-              making calls. It’s fast, easy, and works with iOS and Android.
+              A Vamus leva você aonde precisa ir por menos. Solicite sua viagem pelo aplicativo sem precisar fazer ligações. É rápido, fácil e funciona com iOS e Android.
             </p>
 
             <div className="mt-16 flex flex-col gap-7 sm:flex-row sm:items-center">
@@ -33,10 +32,10 @@ function Index() {
               />
               <div className="max-w-[260px]">
                 <h2 className="yango-headline text-[36px] font-black uppercase leading-none">
-                  Join Okubi
+                  Adere A Vamus
                 </h2>
                 <p className="mt-5 text-[18px] leading-[1.25] text-ink-soft">
-                  Open the camera on your smartphone and scan the code
+                  Abra a câmera do seu smartphone e escaneie o código.
                 </p>
               </div>
             </div>
@@ -47,7 +46,7 @@ function Index() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download App
+              Baixar App
             </a>
           </div>
         </div>
@@ -64,7 +63,7 @@ function Index() {
         <div className="hidden bg-page-panel lg:block" />
         <div className="px-8 py-14 md:px-16 lg:px-32">
           <h2 className="yango-headline text-[42px] font-black uppercase sm:text-[54px]">
-            Here's what Okubi offers
+            Eis o que a Vamus oferece
           </h2>
           <div className="mt-16 grid gap-12 xl:grid-cols-2">
             <article className="flex items-center gap-8">
@@ -74,8 +73,8 @@ function Index() {
                 alt="Promocode ticket"
               />
               <p className="max-w-[310px] text-[30px] font-bold leading-[1.18] sm:text-[34px]">
-                Regular discount campaigns
-                <span className="block font-normal">for the new users</span>
+                Campanhas regulares de descontos
+                <span className="block font-normal">para os novos usuários</span>
               </p>
             </article>
             <article className="flex items-center gap-8">
@@ -85,8 +84,8 @@ function Index() {
                 alt="Affordable route price illustration"
               />
               <p className="max-w-[300px] text-[30px] font-bold leading-[1.18] sm:text-[34px]">
-                Affordable prices
-                <span className="block font-normal">for the popular routes</span>
+                Preços Confortaveis
+                <span className="block font-normal">Para rotas populares</span>
               </p>
             </article>
           </div>
