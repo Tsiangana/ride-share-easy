@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "../components/Header";
-import heroImage from "../assets/yango/hero.jpg";
+import heroImage from "https://jornaloguardiao.com/wp-content/uploads/2025/03/image-95.jpeg";
 import qrCode from "../assets/yango/qr-code.png";
 import discountIcon from "../assets/yango/discount.png";
 import priceIcon from "../assets/yango/price.png";
