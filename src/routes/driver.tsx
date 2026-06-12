@@ -1,6 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { Header } from "../components/Header";
-import heroImage from "../assets/yango/hero.jpg";
+const heroImage = "https://jornaloguardiao.com/wp-content/uploads/2025/03/image-95.jpeg";
 
 export const Route = createFileRoute("/driver")({
   head: () => ({
