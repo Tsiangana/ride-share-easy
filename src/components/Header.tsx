@@ -5,14 +5,14 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-20 flex h-16 items-center justify-between bg-brand px-8 text-brand-foreground md:px-10">
       <div className="flex items-center gap-8">
         <Link to="/" className="yango-logo text-[34px] font-black leading-none">
-          OKUBI
+          VAMUS
         </Link>
         <nav className="hidden items-center gap-6 text-base font-semibold md:flex">
           <Link className="transition-opacity hover:opacity-75" to="/driver">
-            Driver
+            Motorista
           </Link>
           <Link className="transition-opacity hover:opacity-75" to="/career">
-            Career
+            Carreira
           </Link>
         </nav>
       </div>
@@ -38,7 +38,7 @@ export function Header() {
             />
           </svg>
         </span>
-        <span className="hidden sm:inline">Download</span>
+        <span className="hidden sm:inline">Baixar</span>
       </a>
     </header>
   );

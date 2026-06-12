@@ -1,63 +1,63 @@
-# Okubi - Modern Platform
+# Vamus - Plataforma Moderna
 
-Okubi is a high-fidelity landing page for a modern ride-sharing application. Built with speed and professionalism in mind, it provides a seamless user experience for riders and drivers alike.
+A Vamus é uma landing page de alta fidelidade para uma aplicação moderna de transporte partilhado. Construída com foco na rapidez e profissionalismo, proporciona uma experiência de utilizador perfeita tanto para passageiros como para motoristas.
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- **Modern UI/UX**: Premium design with glassmorphism effects and responsive layouts.
-- **Dynamic QR Code**: Scannable QR code on the homepage that links directly to the production site.
-- **Direct Download**: Easy access to the Okubi mobile application (APK) directly from the header.
-- **Unified Navigation**: Shared header component across multiple routes (Home, Driver, Career) for a consistent experience.
-- **Optimized Performance**: Built using **Vite** and **TanStack Router** for blazing fast page transitions.
+- **UI/UX Moderna**: Design premium com efeitos de glassmorphism e layouts responsivos.
+- **Código QR Dinâmico**: Código QR digitalizável na página inicial que liga diretamente ao site de produção.
+- **Descarregamento Direto**: Acesso fácil à aplicação móvel Vamus (APK) diretamente a partir do cabeçalho.
+- **Navegação Unificada**: Componente de cabeçalho partilhado entre múltiplas rotas (Início, Motorista, Carreira) para uma experiência consistente.
+- **Desempenho Otimizado**: Construído usando **Vite** e **TanStack Router** para transições de página extremamente rápidas.
 
-## 🛠️ Tech Stack
+## 🛠️ Tecnologias Utilizadas
 
 - **Framework**: [React](https://reactjs.org/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Routing**: [TanStack Router](https://tanstack.com/router)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Deployment**: [GitHub Actions](https://github.com/features/actions) to GitHub Pages
+- **Ferramenta de Build**: [Vite](https://vitejs.dev/)
+- **Roteamento**: [TanStack Router](https://tanstack.com/router)
+- **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
+- **Implementação**: [GitHub Actions](https://github.com/features/actions) para o GitHub Pages
 
-## 📦 Getting Started
+## 📦 Como Começar
 
-### Prerequisites
+### Pré-requisitos
 
-- Node.js (v22 or higher)
+- Node.js (v22 ou superior)
 - npm
 
-### Installation
+### Instalação
 
-1. Clone the repository:
+1. Clonar o repositório:
    ```bash
    git clone https://github.com/pzau/ride-share-easy.git
    ```
 
-2. Install dependencies:
+2. Instalar as dependências:
    ```bash
    npm install
    ```
 
-3. Run the development server:
+3. Executar o servidor de desenvolvimento:
    ```bash
    npm run dev
    ```
 
-### Building for Production
+### Construir para Produção
 
-To create an optimized production build:
+Para criar uma build de produção otimizada:
 ```bash
 npm run build
 ```
-The output will be located in the `dist/` directory.
+O resultado estará localizado no diretório `dist/`.
 
-## 🚢 Deployment
+## 🚢 Implementação / Deploy
 
-This project is configured for automatic deployment to **GitHub Pages**. Any push to the `main` branch will trigger the deployment workflow defined in `.github/workflows/deploy.yml`.
+Este projeto está configurado para implementação automática no **GitHub Pages**. Qualquer envio (push) para o branch `main` irá acionar o fluxo de trabalho de deploy definido em `.github/workflows/deploy.yml`.
 
-## 📄 License
+## 📄 Licença
 
-This project is licensed under the MIT License.
+Este projeto está licenciado sob a Licença MIT.
 
 ---
 
-Built with ❤️ by [Tsiangana](https://github.com/pzau)
+Construído com ❤️ por [Tsiangana](https://github.com/pzau)

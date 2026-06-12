@@ -27,7 +27,7 @@ function Index() {
             <div className="mt-16 flex flex-col gap-7 sm:flex-row sm:items-center">
               <img
                 className="h-[138px] w-[138px] object-contain"
-                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pzau.github.io/ride-share-easy/"
+                src="https://jornaloguardiao.com/wp-content/uploads/2025/03/image-95.jpeg"
                 alt="QR code to current site"
               />
               <div className="max-w-[260px]">
@@ -54,7 +54,7 @@ function Index() {
           <img
             className="h-full w-full object-cover object-center"
             src={heroImage}
-            alt="Okubi rider standing beside a taxi"
+            alt="Passageiro da Vamus ao lado de um táxi"
           />
         </div>
       </section>

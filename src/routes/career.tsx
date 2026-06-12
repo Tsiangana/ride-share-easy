@@ -4,15 +4,15 @@ import { Header } from "../components/Header";
 export const Route = createFileRoute("/career")({
   head: () => ({
     meta: [
-      { title: "Career — Okubi" },
+      { title: "Carreira — Vamus" },
       {
         name: "description",
-        content: "Build a career at Okubi and help create a sharper urban mobility experience.",
+        content: "Construa uma carreira na Vamus e ajude a criar uma experiência de mobilidade urbana mais inteligente.",
       },
-      { property: "og:title", content: "Career — Okubi" },
+      { property: "og:title", content: "Carreira — Vamus" },
       {
         property: "og:description",
-        content: "Build a career at Okubi and help create a sharper urban mobility experience.",
+        content: "Construa uma carreira na Vamus e ajude a criar uma experiência de mobilidade urbana mais inteligente.",
       },
     ],
   }),
@@ -26,20 +26,20 @@ function CareerPage() {
 
       <section className="min-h-screen px-8 pt-32 md:px-10 lg:px-20">
         <div className="yango-fade-in mx-auto max-w-[1160px]">
-          <p className="text-lg font-bold text-brand">Career</p>
+          <p className="text-lg font-bold text-brand">Carreira</p>
           <h1 className="yango-headline mt-5 max-w-[860px] text-[56px] font-black uppercase sm:text-[72px]">
-            Build mobility people can trust
+            Construa uma mobilidade em que as pessoas confiam
           </h1>
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {[
               [
-                "Operations",
-                "Keep city launches, driver support, and rider quality running smoothly.",
+                "Operações",
+                "Garanta o bom funcionamento do lançamento em novas cidades, do suporte ao motorista e da qualidade do serviço ao passageiro.",
               ],
-              ["Product", "Shape simple digital experiences for riders, drivers, and local teams."],
+              ["Produto", "Crie experiências digitais simples para passageiros, motoristas e equipas locais."],
               [
-                "Growth",
-                "Create practical campaigns that make Okubi the easy choice in every city.",
+                "Crescimento",
+                "Crie campanhas práticas que tornem a Vamus a escolha mais fácil em todas as cidades.",
               ],
             ].map(([title, copy]) => (
               <article
